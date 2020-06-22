@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <!--
@@ -27,7 +28,7 @@
       var recalc = (function refreshRem() {
         var clientWidth = docEl.getBoundingClientRect().width;
         /* 8.55：小于320px不再缩小，11.2：大于420px不再放大 */
-        docEl.style.fontSize = Math.max(Math.min(20 * (clientWidth / docWidth), 16), 8.55) + 'px';
+        docEl.style.fontSize = Math.max(Math.min(20 * (clientWidth / docWidth), 12), 8.55) + 'px';
         return refreshRem;
       })();
       /* 添加倍屏标识，安卓为1 */
@@ -42,10 +43,16 @@
       window.addEventListener(resizeEvt, recalc, false);
       doc.addEventListener('DOMContentLoaded', recalc, false);
     }(window);
+
   </script>
+  <style>
+    .body {
+      overflow: hidden;
+    }
+  </style>
 </head>
 
-<body>
+<body class="body">
   <div id="root"></div>
 </body>
 

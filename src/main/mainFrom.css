@@ -1,0 +1,55 @@
+.mainFrom {
+  height: calc(100% - 28.84rem);
+  position: absolute;
+  width: 37.5rem;
+  top: 28.7rem;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 3.6rem 3.6rem 0 0;
+  padding: 4rem 4.5rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.mainFrom .title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #202020;
+  margin-bottom: 1.9rem;
+}
+.mainFrom .fromMain {
+  overflow-y: scroll;
+  flex: 1;
+}
+.mainFrom .picker-list {
+  margin-bottom: 2rem;
+}
+.mainFrom .picker-list .am-list-body::after,
+.mainFrom .picker-list .am-list-body::before {
+  height: 0;
+}
+.mainFrom .picker-list .am-list-item {
+  background: #fafafb;
+  border-radius: 0.2rem;
+  height: 4.8rem;
+}
+.mainFrom .picker-list .am-list-item .am-list-line .am-list-content {
+  line-height: 4.8rem;
+  font-size: 1.4rem;
+  padding: 0;
+  color: #9E9E9E;
+}
+.mainFrom .picker-list .am-list-item .am-input-control input {
+  color: #9E9E9E;
+  font-size: 1.4rem;
+}
+.mainFrom .submit {
+  height: 4.4rem;
+  background: linear-gradient(144deg, #2263b9 0%, #043e8c 100%);
+  border-radius: 0.6rem;
+  line-height: 4.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 1.9rem 0 3.8rem;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Button } from 'antd-mobile';
+import MainFrom from './main/mainFrom';
+import 'core-js/fn/map';
+import 'core-js/fn/set';
 
 import './scss/App.scss';
 
@@ -11,8 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="box">
-        <Button type="primary">primary</Button>
-        <p>配置scss</p>
+        <MainFrom />
       </div>
     );
   }

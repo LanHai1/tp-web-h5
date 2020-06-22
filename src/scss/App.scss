@@ -1,4 +1,13 @@
 .box {
-    width: 10rem;
     background-color: bisque;
+    width: 100%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: no-repeat top/100% url("../images/编组\ 4.png");
 }
